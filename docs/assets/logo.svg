@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">深度学习实验笔记</title>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#183f48"/>
+  <g fill="none" stroke="#8dd2be" stroke-width="2.4">
+    <path d="M16 17 32 13 48 23M16 17 32 32 48 23M16 32 32 13M16 32 32 32 48 43M16 47 32 32 48 43M16 47 32 51 48 43"/>
+  </g>
+  <g fill="#faf7ed"><circle cx="16" cy="17" r="4"/><circle cx="16" cy="32" r="4"/><circle cx="16" cy="47" r="4"/><circle cx="32" cy="13" r="4"/><circle cx="32" cy="32" r="4"/><circle cx="32" cy="51" r="4"/><circle cx="48" cy="23" r="4"/><circle cx="48" cy="43" r="4"/></g>
+</svg>

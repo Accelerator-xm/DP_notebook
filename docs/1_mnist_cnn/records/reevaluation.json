@@ -1,0 +1,6 @@
+{
+  "accuracy": 0.9892,
+  "correct": 9892,
+  "count": 10000,
+  "device": "cuda"
+}

@@ -1,0 +1,13 @@
+{
+  "test": {
+    "accuracy": 0.9892,
+    "correct": 9892,
+    "count": 10000
+  },
+  "parameters": 28938,
+  "train_size": 60000,
+  "test_size": 10000,
+  "final_train_loss": 0.005205478053539991,
+  "training_seconds": 145.59883717000002,
+  "meets_requirement": true
+}

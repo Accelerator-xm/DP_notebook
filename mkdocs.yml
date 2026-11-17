@@ -1,0 +1,73 @@
+site_name: 深度学习 · 实验与笔记
+site_description: 从 MNIST 卷积网络开始，用代码、图解与实验记录学习深度学习。
+site_url: !ENV [MKDOCS_SITE_URL, 'http://127.0.0.1:8002/']
+repo_url: !ENV [MKDOCS_REPO_URL, 'https://github.com/Accelerator-xm/DP_notebook']
+repo_name: DP_notebook
+edit_uri: ''
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+theme:
+  name: material
+  language: zh
+  font: false
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色
+plugins:
+  - search:
+      lang: en
+      pipeline: []
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+extra_css:
+  - assets/stylesheets/extra.css
+extra:
+  generator: false
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+    unrecognized_links: warn
+nav:
+  - 首页: index.md
+  - '01 · MNIST 卷积网络':
+      - 实验入口: 1_mnist_cnn/index.md
+      - 数据与张量: 1_mnist_cnn/data.md
+      - 卷积网络: 1_mnist_cnn/cnn.md
+      - 训练与梯度: 1_mnist_cnn/training.md
+      - 评估与误差分析: 1_mnist_cnn/evaluation.md

@@ -1,0 +1,27 @@
+{
+  "description": "2026-11-17 保存的原 MNIST 实验记录，复制用于知识笔记与配图；整理笔记时未重新训练。",
+  "original_experiment": "class/deeplearning/task1",
+  "checkpoint_sha256": "926efdfa27f694f76da9f09487a09ecf56fe1898b32f5561496e01acb7aa05d1",
+  "records_sha256": {
+    "config.json": "5fa66188b0a389ac290e1b6bcdb6b4d9ec23b1b42a2e2d4fe1cafc18149d3e44",
+    "metrics.json": "36f1be83dd1a785251f4ac2e1bc76fe5b64aeecbb34d7ec020d4fae79914ffe1",
+    "environment.json": "7fefceca9f76cda13c34f9a16f6bf05ddcca663056b21e8b29f6917b96f1a22b",
+    "analysis.json": "7eed3a4fa9b6887c428954e4d70970ef1fc70478f1cde27a0b028344ef3a5dd6",
+    "reevaluation.json": "f6d80888daefe2d13e6dd6b5ff6f97c942b273a64635b4251a617489868ee6aa",
+    "history.csv": "bd5d0ad059dbe8026e0671e1fc88db0daf3db1a62b25a8d3a35a37fe7e9a5d96",
+    "test_predictions.csv": "16956ab3bb26fdadb81cf55b1861bc2f142ccc9cb54426b484b513043374fa93"
+  },
+  "figures": {
+    "architecture.svg": "按 code/1_mnist_cnn/model.py 推导的结构示意。",
+    "pixels.png": "原实验本地 MNIST 官方测试集 index=0 图像及像素局部。",
+    "convolution.svg": "手工构造的计算示意，不是已训练权重。",
+    "relu_pool.svg": "手工构造的数值示意，不是本次特征图。",
+    "feature_maps.png": "原实验 cnn.pth 在官方测试集 index=0 上的一次前向，未更新权重。",
+    "training_loop.svg": "按 engine.py 的调用顺序绘制的流程示意。",
+    "learning_curves.png": "history.csv 的全部60条记录，未平滑。",
+    "confusion_matrix.png": "analysis.json 的10×10计数，颜色按log(1+计数)显示。",
+    "class_recall.png": "analysis.json 的各类别recall；98%仅为参考线。",
+    "errors.png": "examples.npz 按测试索引选出的前12个错误，非随机/最难样例。",
+    "dataset_split.svg": "当前数据使用方式和建议验证流程的对照示意；54k/6k划分为示意，代码未实行。"
+  }
+}

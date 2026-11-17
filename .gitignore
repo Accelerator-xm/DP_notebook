@@ -221,3 +221,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local documentation and editor state
+.cache/
+.idea/
+.vscode/
+.DS_Store
+.env.*
+!.env.example
+
+# Downloaded datasets and generated experiment outputs
+/code/*/data/
+/code/*/results/
